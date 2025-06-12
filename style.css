@@ -2,26 +2,36 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 #main {
     width: 100%;
     min-height: 100vh;
     padding-bottom: 50px;
-    background-color: #81ecec;
+    background-color: #000;
     display: flex;
     flex-wrap: wrap;
 }
+
 #addBtn {
+    width: 60px;
+    height: 40px;
     position: fixed;
     right: 10px;
     top: 10px;
-    background-color: #2d3436;
+    background: transparent;
+    border: 1px solid #fff;
     color: white;
-    padding: 10px;
-    border: 0;
     outline: 0;
     border-radius: 5px;
+    cursor: pointer;
 }
+
+#addBtn:hover {
+    border: 1px solid #11f7ff;
+}
+
 .note {
     width: 400px;
     height: 400px;
@@ -29,6 +39,7 @@
     margin: 15px;
     margin-top: 55px;
 }
+
 .tool {
     width: 100%;
     background-color: #2d3436;
@@ -37,10 +48,12 @@
     display: flex;
     justify-content: end;
 }
+
 .tool i {
     padding: 5px;
     cursor: pointer;
 }
+
 .note textarea {
     border: none;
     width: 100%;
@@ -49,6 +62,7 @@
     padding: 10px;
     font-size: 20px;
 }
+
 .note textarea:focus {
     border: 0;
     outline: 0;
